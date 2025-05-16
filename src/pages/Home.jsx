@@ -1,4 +1,8 @@
+import Navbar from "@/components/Navbar";
 
 export const Home = () => {
-    return <div className="bg-red-500">Home Page</div>;
+    return (
+        <div className="min-h-screen text-foreground overflow-x-hidden">
+            <Navbar />
+        </div>);
 }
