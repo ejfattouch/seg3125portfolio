@@ -7,7 +7,7 @@ const Navbar = () => {
         {name: "Case Studies", href: "/"}
     ]
     return (
-        <nav className={"fixed w-full z-40"}>
+        <nav className={"w-full h-fit z-40"}>
             <StripesContainer className={"bg-gradient-to-r from-transparent to-black"}>
                 <img src={"src/assets/logo-letters.svg"} className={"my-auto ml-5 size-13"}/>
                 <ul className={"m-auto flex flex-row justify-end space-x-4"}>

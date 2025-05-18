@@ -1,6 +1,6 @@
 import {cn} from "@/lib/utils.js";
 
-const Card = ({ children, border_color = "border-black",  hover_on=true }) => {
+const Card = ({ children, border_color = "border-black",  hover_on=true, className }) => {
     const shadowColors = {
         "border-black": "bg-black",
         "border-primary-blue": "bg-[#007399]",
@@ -10,7 +10,7 @@ const Card = ({ children, border_color = "border-black",  hover_on=true }) => {
     const shadow = shadowColors[border_color] || "bg-black";
 
     return (
-        <div className="relative inline-block">
+        <div className={cn("relative w-fit inline-block", className)}>
             {/* Shadow Box */}
             <div
                 className={cn(
@@ -23,7 +23,7 @@ const Card = ({ children, border_color = "border-black",  hover_on=true }) => {
             {/* Card */}
             <div
                 className={cn(
-                    "relative flex flex-col p-4 bg-white border-3",
+                    "relative flex flex-col w-fit p-4 bg-white border-3",
                     hover_on ? "transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5" : "",
                     border_color
                 )}
