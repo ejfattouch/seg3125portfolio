@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/*
+  List of files that contain colors that need to be updated if this theme changes
+  - src/components/Card.jsx
+ */
 @theme {
     --color-primary-red: #FF3366;
     --color-primary-red-dark: #993366;

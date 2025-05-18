@@ -1,15 +1,20 @@
-const StripesContainer = ({ children }) => {
-    return (
-        <div>
-            <div className={"bg-primary-blue w-full h-7"}></div>
-            <div className={"bg-primary-blue-dark w-full h-2"}></div>
+import { cn } from "@/lib/utils.js"
 
-            <div className={"bg-white w-full h-15"}>
+const StripesContainer = ({ children, height = "h-15", flex = "flex-row", className }) => {
+    const h_color1 = "h-3";
+    const h_color2 = "h-2";
+
+    return (
+        <div className={cn( className)}>
+            <div className={cn("bg-primary-blue w-full", h_color1)}></div>
+            <div className={cn("bg-primary-blue-dark", h_color2)}></div>
+
+            <div className={cn("flex bg-white w-full", height, flex)}>
                 {children}
             </div>
 
-            <div className={"bg-primary-red-dark w-full h-2"}></div>
-            <div className={"bg-primary-red w-full h-7"}></div>
+            <div className={cn("bg-primary-red-dark", h_color2)}></div>
+            <div className={cn("bg-primary-red", h_color1)}></div>
         </div>
     );
 }
