@@ -2,7 +2,7 @@ import StripesContainer from "@/components/StripesContainer.jsx";
 
 const Navbar = () => {
     const navItems = [
-        {name: "About Me", href: "/#about_card"},
+        {name: "About Me", href: "/#about-desc"},
         {name: "How I Work", href: "/"},
         {name: "Case Studies", href: "/"}
     ]

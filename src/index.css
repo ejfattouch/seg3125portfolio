@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 @font-face {
     font-family: 'Proxima-Nova';
     src: url('./assets/fonts/proximanova_light.otf') format('opentype');
@@ -47,8 +49,6 @@
     font-style: italic;
 }
 
-@import "tailwindcss";
-
 /*
   List of files that contain colors that need to be updated if this theme changes
   - src/components/Card.jsx
@@ -64,4 +64,8 @@
 
     /* Fonts */
     --font-proxima: 'Proxima-Nova', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }

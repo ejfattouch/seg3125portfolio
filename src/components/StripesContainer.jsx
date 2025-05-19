@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils.js"
 
-const StripesContainer = ({ children, height = "h-15", flex = "flex-row", className }) => {
+const StripesContainer = ({ children, height = "h-15", flex = "flex-row", className, bgcolor }) => {
     const h_color1 = "h-3";
     const h_color2 = "h-2";
 
@@ -9,7 +9,7 @@ const StripesContainer = ({ children, height = "h-15", flex = "flex-row", classN
             <div className={cn("bg-primary-blue w-full", h_color1)}></div>
             <div className={cn("bg-primary-blue-dark", h_color2)}></div>
 
-            <div className={cn("flex bg-main w-full", height, flex)}>
+            <div className={cn("flex bg-main w-full", height, flex, bgcolor)}>
                 {children}
             </div>
 
