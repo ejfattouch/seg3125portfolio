@@ -1,6 +1,6 @@
 import {cn} from "@/lib/utils.js";
 
-const Card = ({ children, border_color = "border-black",  hover_on=true, className }) => {
+const Card = ({ children, border_color = "border-black",  hover_on=true, className , padding = "p-4"}) => {
     const shadowColors = {
         "border-black": "bg-black",
         "border-primary-blue": "bg-[#007399]",
@@ -23,9 +23,10 @@ const Card = ({ children, border_color = "border-black",  hover_on=true, classNa
             {/* Card */}
             <div
                 className={cn(
-                    "relative flex flex-col w-fit p-4 bg-white border-3",
+                    "relative flex flex-col w-fit bg-main border-3",
                     hover_on ? "transition-all duration-200 hover:-translate-x-0.5 hover:-translate-y-0.5" : "",
-                    border_color
+                    border_color,
+                    padding
                 )}
             >
                 {children}

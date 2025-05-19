@@ -1,13 +1,8 @@
-import Card from "@/components/Card.jsx";
+import AboutMe from "@/components/main-content/AboutMe.jsx";
 
 export const Home = () => {
     return (
-        <div className="min-h-screen text-foreground overflow-x-hidden ">
-            <Card border_color={"border-primary-blue"}>
-                <h1>Hello World</h1>
-            </Card>
-            <Card border_color={"border-primary-red"} hover_on={false}>
-                <h1>Hello World</h1>
-            </Card>
+        <div className="min-h-screen xl:p-20 pt-20 text-foreground overflow-x-hidden ">
+            <AboutMe />
         </div>);
 }

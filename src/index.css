@@ -1,3 +1,52 @@
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/fonts/proximanova_light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/fonts/proximanova_regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/fonts/proximanova_bold.otf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/fonts/proximanova_boldit.otf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/fonts/proximanova_extrabold.otf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/fonts/proximanova_black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('./assets/fonts/proximanova_blackit.otf') format('opentype');
+    font-weight: 900;
+    font-style: italic;
+}
+
 @import "tailwindcss";
 
 /*
@@ -5,9 +54,14 @@
   - src/components/Card.jsx
  */
 @theme {
+    /* Colors */
     --color-primary-red: #FF3366;
     --color-primary-red-dark: #993366;
     --color-primary-blue: #33CCFF;
     --color-primary-blue-dark: #3366CC;
     --color-primary-gray: #E7E7E7;
+    --color-main: #fff5f8;
+
+    /* Fonts */
+    --font-proxima: 'Proxima-Nova', sans-serif;
 }
