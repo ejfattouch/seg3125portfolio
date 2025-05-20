@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar.jsx";
 import Card from "@/components/Card.jsx";
 
 export const NotFound = () => {
