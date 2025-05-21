@@ -9,7 +9,7 @@ const StripesContainer = ({ children, height = "h-15", flex = "flex-row", classN
             <div className={cn("bg-primary-blue w-full", h_color1)}></div>
             <div className={cn("bg-primary-blue-dark", h_color2)}></div>
 
-            <div className={cn("flex bg-main w-full", height, flex, bgcolor)}>
+            <div className={cn("flex bg-white", height, flex, bgcolor)}>
                 {children}
             </div>
 

@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar.jsx";
 
 function App() {
     return (
-        <div className="bg-main relative min-h-screen antialiased font-proxima font-bold">
+        <div className="bg-white relative min-h-screen antialiased font-proxima font-bold">
             {/* Background Layer */}
             {/*<div className="absolute inset-0 bg-[url('./assets/pattern-dot.svg')] bg-repeat bg-[length:100px] z-0" />*/}
 

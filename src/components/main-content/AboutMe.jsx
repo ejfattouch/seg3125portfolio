@@ -7,8 +7,8 @@ const AboutMe = () => {
     return (
         <section className={"mt-20"}>
             <StripesContainer bgcolor={"bg-primary-gray"} height={"h-fit py-10 px-20 xl:p-20"} flex={"flex-col items-center"}>
-                <h1 className={"w-full text-center text-5xl font-black"}>About Me</h1>
-                <div id={"about-desc"} className={"w-fit text-start mt-5 flex flex-col gap-5 font-normal"}>
+                <h1 id={"about-desc"} className={"w-full text-center text-5xl font-black"}>About Me</h1>
+                <div className={"w-fit text-start mt-5 flex flex-col gap-5 font-normal"}>
                     <BulletPointParagraph
                         bullet={"👋"}
                         text={`Hello! I'm Edward-Joseph Fattouch, a dedicated software engineering student at the
