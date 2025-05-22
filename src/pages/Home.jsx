@@ -1,6 +1,7 @@
 import Header from "@/components/main-content/Header.jsx";
 import AboutMe from "@/components/main-content/AboutMe.jsx";
 import HowIWork from "@/components/main-content/HowIWork.jsx";
+import CaseStudies from "@/components/main-content/CaseStudies.jsx";
 
 export const Home = () => {
     return (
@@ -8,5 +9,6 @@ export const Home = () => {
             <Header />
             <AboutMe />
             <HowIWork />
+            <CaseStudies />
         </div>);
 }

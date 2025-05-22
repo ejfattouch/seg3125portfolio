@@ -3,8 +3,8 @@ import StripesContainer from "@/components/StripesContainer.jsx";
 const Navbar = () => {
     const navItems = [
         {name: "About Me", href: "/#about-desc"},
-        {name: "How I Work", href: "/"},
-        {name: "Case Studies", href: "/"}
+        {name: "How I Work", href: "/#how_i_work"},
+        {name: "Case Studies", href: "/#case_studies"}
     ]
     return (
         <nav className={"w-full h-fit z-40"}>

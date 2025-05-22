@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Home } from "@/pages/Home.jsx";
 import { NotFound } from "@/pages/NotFound.jsx";
 import Navbar from "@/components/Navbar.jsx";
+import {ComingSoon} from "@/pages/ComingSoon.jsx";
 
 function App() {
     return (
@@ -15,6 +16,10 @@ function App() {
                     <Navbar />
                     <Routes>
                         <Route index element={<Home />} />
+                        <Route path="/service-site" element={<ComingSoon border_color={"border-primary-red"}/>} />
+                        <Route path="/game" element={<ComingSoon border_color={"border-primary-blue"} />} />
+                        <Route path="/commerce" element={<ComingSoon border_color={"border-primary-red"} />} />
+                        <Route path="/analytics" element={<ComingSoon border_color={"border-primary-red"} />} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                 </Router>

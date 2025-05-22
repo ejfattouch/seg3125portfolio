@@ -10,7 +10,7 @@ const Card = ({ children, border_color = "border-black",  hover_on=true, classNa
     const shadow = shadowColors[border_color] || "bg-black";
 
     return (
-        <div className={cn("relative w-fit inline-block", className)}>
+        <div className={cn("relative w-fit h-fit inline-block", className)}>
             {/* Shadow Box */}
             <div
                 className={cn(

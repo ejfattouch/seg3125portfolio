@@ -5,38 +5,33 @@ const HowIWork = () => {
     const bulletFontSize = "text-3xl";
 
     return (
-        <section className={"mt-20"}>
-            <div className={"h-fit py-10 px-20 xl:p-20 flex-col items-center"}>
-                <h1 className={"w-full text-center text-5xl font-black"}>How I Work</h1>
-                <div id={"about-desc"} className={"w-fit text-start mt-5 flex flex-col gap-8 font-normal"}>
+        <section id={"how_i_work"} className={"mt-20"}>
+            <div className={"h-fit py-10 px-20 xl:px-30 xl:py-20 flex-col items-center"}>
+                <h1 className={"w-full text-center text-5xl p-4 font-black"}>How I Work</h1>
+                <div id={"about-desc"} className={"w-fit text-start flex flex-col font-normal"}>
                     <BulletPointParagraph
-                        bullet={"👋"}
-                        text={`I am currently developing my skills through a UI design course as part of my university 
-                        program. This course is helping me build a strong foundation in core design principles and techniques. 
-                        I’m learning about topics such as usability, user-centered design, and heuristic evaluation—concepts 
-                        that I will integrate into my future design process.
+                        bullet={"🎓"}
+                        text={`
+                        Currently taking a UI design course focused on usability principles, layout, 
+                        and visual hierarchy.
                         `}
-                        textStyles={"text-start"}
+                        textStyles={"text-start p-4"}
                         textSize={bulletFontSize}
                     />
                     <BulletPointParagraph
-                        bullet={"👋"}
+                        bullet={"📚"}
                         text={`
-                        We are also using resources like the Nielsen Norman Group (NN/g) to deepen our understanding of 
-                        user experience best practices. As I gain more experience, I plan to update this section with a 
-                        detailed explanation of my workflow, including the tools and methods I use to approach design challenges.
-
-                        For now, my focus is on learning and applying fundamental design principles to create interfaces that are both functional and user-friendly.`}
-                        textStyles={"text-start"}
+                        Learning through hands-on projects and resources from Nielsen Norman Group (NN/g).
+                        `}
+                        textStyles={"text-start p-4"}
                         textSize={bulletFontSize}
                     />
                     <BulletPointParagraph
-                        bullet={"👋"}
+                        bullet={"🛠️"}
                         text={`
-                        For now, my focus is on learning and applying fundamental design principles to create interfaces 
-                        that are both functional and user-friendly.
+                         Applying design concepts in real-time to portfolio pieces to reinforce best practices.
                         `}
-                        textStyles={"text-start"}
+                        textStyles={"text-start p-4"}
                         textSize={bulletFontSize}
                     />
                 </div>
