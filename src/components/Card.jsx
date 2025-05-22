@@ -14,7 +14,7 @@ const Card = ({ children, border_color = "border-black",  hover_on=true, classNa
             {/* Shadow Box */}
             <div
                 className={cn(
-                    "absolute top-1 left-1 w-full h-full",
+                    "absolute top-2 left-2 w-full h-full",
                     shadow,
                 )}
                 aria-hidden="true"
