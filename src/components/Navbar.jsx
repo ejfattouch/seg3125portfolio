@@ -1,5 +1,6 @@
 import StripesContainer from "@/components/StripesContainer.jsx";
 import LogoLetters from "@/assets/logo/logo-letters.svg"
+import { scrollWithOffset } from "@/lib/utils.js";
 
 const Navbar = () => {
     const navItems = [
@@ -16,8 +17,14 @@ const Navbar = () => {
                 <ul className={"absolute left-1/2 -translate-x-1/2 flex flex-row justify-end space-x-4"}>
                     {navItems.map((item, index) => (
                         <li className={"relative group"} key={index}>
-                            <a href={item.href} className={"text-foreground p-1 font-normal text-xl"}
-                               key={index}>{item.name}</a>
+                            <a
+                                href={item.href}
+                                className={"text-foreground p-1 font-normal text-xl"}
+                                onClick={(e) => scrollWithOffset(e, item.href, 35)}
+                                key={index}
+                            >
+                                {item.name}
+                            </a>
                             <div className="absolute left-0 bottom-0 w-full h-1 flex scale-x-0 group-hover:scale-x-100 transition-transform origin-center duration-300">
                                 <div className="w-1/2 h-full bg-primary-blue"></div>
                                 <div className="w-1/2 h-full bg-primary-red"></div>
