@@ -1,4 +1,5 @@
 import StripesContainer from "@/components/StripesContainer.jsx";
+import LogoLetters from "@/assets/logo/logo-letters.svg"
 
 const Navbar = () => {
     const navItems = [
@@ -10,7 +11,7 @@ const Navbar = () => {
         <nav className={"w-full h-fit z-40"}>
             <StripesContainer className={"bg-gradient-to-r from-transparent to-black"} flex={"flex-row items-center"}>
                 <a href="/" className={"px-3"}>
-                    <img src={"src/assets/logo/logo-letters.svg"} className={"ml-5 size-13"}/>
+                    <img src={LogoLetters} className={"ml-5 size-13"}/>
                 </a>
                 <ul className={"absolute left-1/2 -translate-x-1/2 flex flex-row justify-end space-x-4"}>
                     {navItems.map((item, index) => (

@@ -1,13 +1,14 @@
 import StripesContainer from "@/components/StripesContainer.jsx";
 import ImageCard from "@/components/ImageCard.jsx";
 import {cn} from "@/lib/utils.js";
+import PlaceHolderComingSoon from "@/assets/placeholder.png"
 
 const CaseStudies = () => {
     const items = [
-        {"src": "src/assets/placeholder.png", "text": "Service Site", "alt": "Case Study 1", "href": "/service-site"},
-        {"src": "src/assets/placeholder.png", "text": "Small Game", "alt": "Case Study 2", "href": "/game"},
-        {"src": "src/assets/placeholder.png", "text": "E-Commerce Site", "alt": "Case Study 3", "href": "/commerce"},
-        {"src": "src/assets/placeholder.png", "text": "Analytics Site", "alt": "Case Study 4", "href": "/analytics"}
+        {"src": PlaceHolderComingSoon, "text": "Service Site", "alt": "Case Study 1", "href": "/service-site"},
+        {"src": PlaceHolderComingSoon, "text": "Small Game", "alt": "Case Study 2", "href": "/game"},
+        {"src": PlaceHolderComingSoon, "text": "E-Commerce Site", "alt": "Case Study 3", "href": "/commerce"},
+        {"src": PlaceHolderComingSoon, "text": "Analytics Site", "alt": "Case Study 4", "href": "/analytics"}
     ]
 
     const img_size = "w-80 h-80";
