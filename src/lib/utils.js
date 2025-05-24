@@ -30,11 +30,10 @@ function getSpacingMultiplier(factor = 1) {
 
 
 export const scrollWithOffset=(e, id, mt) => {
-    e.preventDefault();
+    if (e) e.preventDefault();
     const target = document.getElementById(id.split("#")[1]);
     if (target) {
         const offset = getSpacingMultiplier() * mt;
-        console.log(offset)
         const y = target.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top: y > 0 ? y : 0, behavior: "smooth" });
     }
