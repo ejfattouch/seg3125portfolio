@@ -1,6 +1,5 @@
 import StripesContainer from "@/components/StripesContainer.jsx";
 import LogoLetters from "@/assets/logo/logo-letters.svg"
-import { scrollWithOffset } from "@/lib/utils.js";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {

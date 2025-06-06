@@ -1,7 +1,7 @@
 import Card from "@/components/Card.jsx";
 import {cn} from "@/lib/utils.js";
 
-const ImageCard = ({children, src, text, alt, txt_class, img_class, border_color = "border-black",  hover_on=true, className , padding = "p-4"}) => {
+const ImageCard = ({children, src, text, alt, txt_class, img_class, border_color = "border-black",  hover_on=true, className , padding = "p-4", iframe = false}) => {
     return (
         <Card
             border_color={border_color}
@@ -9,7 +9,11 @@ const ImageCard = ({children, src, text, alt, txt_class, img_class, border_color
             className={className}
             padding={padding}
         >
-            <img className={img_class} src={src}  alt={alt}/>
+            { iframe ?
+                <iframe src={src} className={img_class} scrolling={"no"}></iframe>
+                :
+                <img className={img_class} src={src}  alt={alt}/>
+            }
             <p className={cn("pt-4", txt_class)}>{text}</p>
             { children }
         </Card>

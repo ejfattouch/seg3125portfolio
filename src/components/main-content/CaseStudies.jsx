@@ -2,16 +2,17 @@ import StripesContainer from "@/components/StripesContainer.jsx";
 import ImageCard from "@/components/ImageCard.jsx";
 import {cn} from "@/lib/utils.js";
 import PlaceHolderComingSoon from "@/assets/placeholder.png"
+import ServiceSite from "@/assets/casestudies/service_site.png"
 
 const CaseStudies = () => {
     const items = [
-        {"src": PlaceHolderComingSoon, "text": "Service Site", "alt": "Case Study 1", "href": "/service-site"},
+        {"src": ServiceSite, "text": "Service Site", "alt": "Case Study 1", "href": "https://service-web-app-iota.vercel.app/"},
         {"src": PlaceHolderComingSoon, "text": "Small Game", "alt": "Case Study 2", "href": "/game"},
         {"src": PlaceHolderComingSoon, "text": "E-Commerce Site", "alt": "Case Study 3", "href": "/commerce"},
         {"src": PlaceHolderComingSoon, "text": "Analytics Site", "alt": "Case Study 4", "href": "/analytics"}
     ]
 
-    const img_size = "w-60 sm:w-80 lg:w-90";
+    const img_size = "w-60 sm:w-80 lg:w-90 h-60 sm:h-80 lg:h-90";
 
     return (
         <section className={"mt-20"}>
@@ -26,9 +27,11 @@ const CaseStudies = () => {
                             text={item.text}
                             alt={item.alt}
                             border_color={ index % 2 === 0 ? "border-primary-red" : "border-primary-blue"}
-                            txt_class={"text-center font-bold text-xl sm:text-2xl lg:text-3xl"}>
+                            txt_class={"text-center font-bold text-xl sm:text-2xl lg:text-3xl"}
+                            iframe={item.iframe}
+                        >
 
-                            <a href={item.href} className={cn("text-center text-xl sm:text-2xl",index % 2 === 0 ? "text-primary-red" : "text-primary-blue-dark")}>View Case Study</a>
+                            <a target={'_blank'} href={item.href} className={cn("text-center text-xl sm:text-2xl",index % 2 === 0 ? "text-primary-red" : "text-primary-blue-dark")}>View Case Study</a>
                         </ImageCard>
                     ))}
                 </div>

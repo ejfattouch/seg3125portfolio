@@ -5,20 +5,29 @@ import Navbar from "@/components/Navbar.jsx";
 import {ComingSoon} from "@/pages/ComingSoon.jsx";
 import Footer from "@/components/Footer.jsx";
 import StripesContainer from "@/components/StripesContainer.jsx";
+import {useEffect} from "react";
+
+
+function ExternalRedirect({ url }) {
+    if (!url) {
+        url = "/";
+    }
+    useEffect(() => {
+        window.location.href = url;
+    }, []);
+
+    return null;
+}
 
 function App() {
     return (
         <div className="bg-white relative min-h-screen antialiased font-proxima font-bold">
-            {/* Background Layer */}
-            {/*<div className="absolute inset-0 bg-[url('./assets/pattern-dot.svg')] bg-repeat bg-[length:100px] z-0" />*/}
-
-            {/* Content Layer */}
             <div className="relative z-10">
                 <Router>
                     <Navbar />
                     <Routes>
                         <Route index element={<Home />} />
-                        <Route path="/service-site" element={<ComingSoon border_color={"border-primary-red"}/>} />
+                        <Route path='/service-site' element={<ExternalRedirect url={"https://service-web-app-iota.vercel.app/"} />}/>
                         <Route path="/game" element={<ComingSoon border_color={"border-primary-blue"} />} />
                         <Route path="/commerce" element={<ComingSoon border_color={"border-primary-red"} />} />
                         <Route path="/analytics" element={<ComingSoon border_color={"border-primary-red"} />} />
