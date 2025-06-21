@@ -2,12 +2,15 @@ import StripesContainer from "@/components/StripesContainer.jsx";
 import ImageCard from "@/components/ImageCard.jsx";
 import {cn} from "@/lib/utils.js";
 import PlaceHolderComingSoon from "@/assets/placeholder.png"
-import ServiceSite from "@/assets/casestudies/service_site.png"
+
+// Case Studies images import
+import service_site_preview_img from "@/assets/casestudies/service_site.png"
+import game_preview_img from "@/assets/casestudies/game.png"
 
 const CaseStudies = () => {
     const items = [
-        {"src": ServiceSite, "text": "Service Site", "alt": "Case Study 1", "href": "https://service-web-app-iota.vercel.app/"},
-        {"src": PlaceHolderComingSoon, "text": "Small Game", "alt": "Case Study 2", "href": "/game"},
+        {"src": service_site_preview_img, "text": "Service Site", "alt": "Case Study 1: Service Site", "href": "https://service-web-app-iota.vercel.app/"},
+        {"src": game_preview_img, "text": "Small Game", "alt": "Case Study 2: Small Game", "href": "https://word-seeker-game.vercel.app/"},
         {"src": PlaceHolderComingSoon, "text": "E-Commerce Site", "alt": "Case Study 3", "href": "/commerce"},
         {"src": PlaceHolderComingSoon, "text": "Analytics Site", "alt": "Case Study 4", "href": "/analytics"}
     ]

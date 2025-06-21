@@ -28,7 +28,7 @@ function App() {
                     <Routes>
                         <Route index element={<Home />} />
                         <Route path='/service-site' element={<ExternalRedirect url={"https://service-web-app-iota.vercel.app/"} />}/>
-                        <Route path="/game" element={<ComingSoon border_color={"border-primary-blue"} />} />
+                        <Route path='/game' element={<ExternalRedirect url={"https://word-seeker-game.vercel.app/"} />}/>
                         <Route path="/commerce" element={<ComingSoon border_color={"border-primary-red"} />} />
                         <Route path="/analytics" element={<ComingSoon border_color={"border-primary-red"} />} />
                         <Route path="*" element={<NotFound />} />
