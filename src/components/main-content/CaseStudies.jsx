@@ -6,12 +6,13 @@ import PlaceHolderComingSoon from "@/assets/placeholder.png"
 // Case Studies images import
 import service_site_preview_img from "@/assets/casestudies/service_site.png"
 import game_preview_img from "@/assets/casestudies/game.png"
+import e_commerce_preview_img from "@/assets/casestudies/e-commerce.png"
 
 const CaseStudies = () => {
     const items = [
         {"src": service_site_preview_img, "text": "Service Site", "alt": "Case Study 1: Service Site", "href": "https://service-web-app-iota.vercel.app/"},
         {"src": game_preview_img, "text": "Small Game", "alt": "Case Study 2: Small Game", "href": "https://word-seeker-game.vercel.app/"},
-        {"src": PlaceHolderComingSoon, "text": "E-Commerce Site", "alt": "Case Study 3", "href": "/commerce"},
+        {"src": e_commerce_preview_img, "text": "E-Commerce Site", "alt": "Case Study 3: E-Commerce Site", "href": "https://gamevault-seven.vercel.app/"},
         {"src": PlaceHolderComingSoon, "text": "Analytics Site", "alt": "Case Study 4", "href": "/analytics"}
     ]
 
