@@ -2,7 +2,6 @@ import {BrowserRouter as Router, Route, Routes, useLocation} from "react-router-
 import { Home } from "@/pages/Home.jsx";
 import { NotFound } from "@/pages/NotFound.jsx";
 import Navbar from "@/components/Navbar.jsx";
-import {ComingSoon} from "@/pages/ComingSoon.jsx";
 import Footer from "@/components/Footer.jsx";
 import StripesContainer from "@/components/StripesContainer.jsx";
 import {useEffect} from "react";
@@ -30,7 +29,7 @@ function App() {
                         <Route path='/service-site' element={<ExternalRedirect url={"https://service-web-app-iota.vercel.app/"} />}/>
                         <Route path='/game' element={<ExternalRedirect url={"https://word-seeker-game.vercel.app/"} />}/>
                         <Route path="/commerce" element={<ExternalRedirect url={"https://gamevault-seven.vercel.app/"}/>} />
-                        <Route path="/analytics" element={<ComingSoon border_color={"border-primary-red"} />} />
+                        <Route path="/analytics" element={<ExternalRedirect url={"https://gamevault-seven.vercel.app/"}/>} />
                         <Route path="*" element={<NotFound />} />
                     </Routes>
                     <FooterWrapper />
